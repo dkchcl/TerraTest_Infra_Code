@@ -10,7 +10,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      cd $(System.DefaultWorkingDirectory)\terratest
+      cd $(System.DefaultWorkingDirectory)/terratest
       go mod init "vnettest"
       go mod tidy
       go get github.com/gruntwork-io/terratest
