@@ -2,7 +2,7 @@ name: TerraTest Pipeline
 
 trigger: none
 # - main
-pool: New_agent
+pool: Agent_01_Dec2025
 
 steps:
 - task: PowerShell@2
