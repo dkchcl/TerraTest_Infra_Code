@@ -6,10 +6,11 @@ pool: Agent_01_Dec2025
 
 steps:
 - task: PowerShell@2
+  displayName: TerraTest
   inputs:
     targetType: 'inline'
     script: |
-      cd $(System.DefaultWorkingDirectory)\terratest\
+      cd $(System.DefaultWorkingDirectory)\terratest
       go mod init "vnettest"
       go mod tidy
       go get github.com/gruntwork-io/terratest
