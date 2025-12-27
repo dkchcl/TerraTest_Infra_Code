@@ -16,6 +16,6 @@ steps:
       go get github.com/gruntwork-io/terratest
       go mod tidy
       go test -v -timeout 30m
-    workingDirectory: '$(System.DefaultWorkingDirectory)'
+    # workingDirectory: '$(System.DefaultWorkingDirectory)'
 
 
